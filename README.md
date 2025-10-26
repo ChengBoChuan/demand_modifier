@@ -46,7 +46,7 @@ msbuild CSL2DemandControl_NET8.sln /p:Configuration=Debug
 
 ## 疑難排解
 
-本 mod 處於早期開發階段。可能存在一些錯誤或尚未處理的邊緣情況。Cities: Skylines 2 中的需求「系統」比 1 中要複雜得多。如果您發現任何錯誤或缺少功能，請在此處報告：https://github.com/johnytoxic/CSL2DemandControl/issues
+本 mod 處於早期開發階段。可能存在一些錯誤或尚未處理的邊緣情況。Cities: Skylines 2 中的需求「系統」比 1 中要複雜得多。如果您發現任何錯誤或缺少功能，請在此處報告：https://github.com/ChengBoChuan/demand_modifier/issues
 
 ## 與原始版本的差異
 
