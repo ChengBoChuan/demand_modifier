@@ -1,5 +1,71 @@
 # Cities: Skylines 2 - Demand Control (.NET 8)
 
+[English](#english) | [繁體中文](#繁體中文)
+
+---
+
+## English
+
+Manage the demand in your city.
+
+**This is a reimplementation using .NET 8 framework**
+
+### Project Description
+
+This project is a demand control mod repository for Cities: Skylines 2. It uses the Harmony library to intercept the game's demand system update cycles, dynamically modifying demand values for residential, commercial, industrial, and other building types. Through reflection techniques, it accesses the game's private fields and sets demand values to maximum (255) during each simulation cycle, allowing players to develop their cities without restrictions.
+
+This repository contains the following mods:
+- [Infinite Demand](./InfiniteDemand/) - Sets all demand types to infinite
+
+### .NET 8 Version Features
+
+This project is a .NET 8 port of the original .NET Framework 4.7.2 version, featuring the following improvements:
+
+#### Technical Improvements
+- Uses .NET 8 target framework
+- Enables latest C# language features
+- Uses modern C# syntax (file-scoped namespaces, collection expressions)
+- Enables nullable reference types
+- Enables implicit using statements
+- Removes legacy test dependencies (Microsoft.QualityTools.Testing.Fakes)
+
+#### Code Improvement Examples
+- Uses file-scoped namespaces (`namespace InfiniteDemand;`)
+- Uses collection expressions (`[element1, element2, ...]`)
+- Better code readability and maintainability
+
+### Prerequisites
+
+1. **CSII_TOOLPATH Environment Variable**: Must be set (user-level) pointing to the CS2 mod tools directory
+2. **.NET 8 SDK**: Requires .NET 8 SDK to build the project
+3. **Cities: Skylines 2**: Game must be installed
+
+### Building
+
+```powershell
+# Standard build
+msbuild CSL2DemandControl_NET8.sln /p:Configuration=Release
+
+# Debug build
+msbuild CSL2DemandControl_NET8.sln /p:Configuration=Debug
+```
+
+### Troubleshooting
+
+This mod is in early development stages. There may be some bugs or unhandled edge cases. The demand "system" in Cities: Skylines 2 is much more complex than in 1. If you find any bugs or missing features, please report them here: https://github.com/ChengBoChuan/demand_modifier/issues
+
+### Differences from Original Version
+
+This version has identical functionality to the original .NET Framework 4.7.2 version but is built using the modern .NET 8 framework and C# language features.
+
+### License
+
+Please refer to the original project's license information.
+
+---
+
+## 繁體中文
+
 管理您城市中的需求。
 
 **這是使用 .NET 8 框架重新實作的版本**
