@@ -24,14 +24,17 @@
 	</PropertyGroup>
 	
 	<!--Imports must be after PropertyGroup block-->
+	<!--Only import Mod.props for reference resolution, skip Mod.targets to avoid ModPostProcessor issues with .NET 8-->
 	<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
-	<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
+	<!--<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />-->
 
 	<!--Override Mod.props settings to use .NET 8 instead of net48-->
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<!--Skip ModPostProcessor which may not be compatible with .NET 8-->
+		<RunModPostProcessor>false</RunModPostProcessor>
 	</PropertyGroup>
 
 	<ItemGroup>
