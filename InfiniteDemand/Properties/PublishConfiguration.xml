@@ -42,5 +42,5 @@ Built with .NET 8 for optimal performance and compatibility with the latest game
 	<!--ChangeLog>
 	</ChangeLog-->
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
-	<ExternalLink Type="github" Url="https://github.com/johnytoxic/CSL2DemandControl/tree/main/InfiniteDemand" />
+	<ExternalLink Type="github" Url="https://github.com/ChengBoChuan/demand_modifier/tree/master/InfiniteDemand" />
 </Publish>
