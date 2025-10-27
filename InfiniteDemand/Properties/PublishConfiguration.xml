@@ -32,7 +32,7 @@ Built with .NET 8 for optimal performance and compatibility with the latest game
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.2" />
+	<ModVersion Value="0.0.1" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.0.*" />
 	<!--Dependency for the mod, can be set multiple times-->
